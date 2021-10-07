@@ -2,7 +2,7 @@
 
 Shader::Shader()
 {
-	shaderID = uniformModel = uniformProjection = 0;
+	shaderID = uniformModel = uniformProjection = uniformView =  0;
 }
 
 void Shader::CreateFromString(const char* vertexCode, const char* fragmentCode)
@@ -80,8 +80,10 @@ void Shader::CompileShade(const char* vertexCode, const char* fragmentCode)
 		return;
 	}
 	//get the reference in the sahder of  xMove
-	uniformModel = glGetUniformLocation(shaderID, "model");
 	uniformProjection = glGetUniformLocation(shaderID, "projection");
+	uniformModel = glGetUniformLocation(shaderID, "model");
+	uniformView = glGetUniformLocation(shaderID, "view");
+	
 }
 
 void Shader::AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType)
@@ -124,6 +126,11 @@ GLuint Shader::GetProjectionLocation()
 GLuint Shader::GetModelLocation()
 {
 	return uniformModel;
+}
+
+GLuint Shader::GetViewLocation()
+{
+	return uniformView;
 }
 
 void Shader::UseShader()
