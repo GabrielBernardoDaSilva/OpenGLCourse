@@ -19,5 +19,5 @@ void main()
 	
 	TexCoord = tex;
 
-	Normal = mat3(model) * norm;
+	Normal = mat3(transpose(inverse(model))) * norm;
 }

@@ -41,6 +41,11 @@ static const char *vShader = "Shaders/shader.vert";
 // Fragament Shaders
 static const char *fShader = "Shaders/shader.frag";
 
+void calcAvarageNormals(unsigned int* indices, unsigned int indiceCount, unsigned int* vertices, unsigned int verticesCount, unsigned int vLength, unsigned int normalOffset)
+{
+	
+}
+
 void createObjects()
 {
 	unsigned int indices[] = {
@@ -50,12 +55,13 @@ void createObjects()
 		0, 1, 2};
 
 	GLfloat vertices[] = {
-	//	x      y      z			u	  v
-		-1.0f, -1.0f, 0.0f,		0.0f, 0.0f,	
-		0.0f, -1.0f, 1.0f,		0.5f, 0.0f,
-		1.0f, -1.0f, 0.0f,		1.0f, 0.0f,
-		0.0f, 1.0f, 0.0f,		0.5f, 1.0f
+	//	x      y      z			u	  v     nx	  ny	nz
+		-1.0f, -1.0f, 0.0f,		0.0f, 0.0f, 0.0f, 0.0f, 0.0f,	
+		 0.0f, -1.0f, 1.0f,		0.5f, 0.0f, 0.0f, 0.0f, 0.0f,
+		 1.0f, -1.0f, 0.0f,		1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+		 0.0f,  1.0f, 0.0f,		0.5f, 1.0f, 0.0f, 0.0f, 0.0f
 	};
+	
 
 
 	Mesh *obj1 = new Mesh();

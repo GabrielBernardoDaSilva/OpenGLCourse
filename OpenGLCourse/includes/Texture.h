@@ -9,10 +9,10 @@ class Texture
 private:
     GLuint textureID;
     int width, height, bitDepth;
-    char* fileLocation;
+    const char* fileLocation;
 public:
     Texture();
-    Texture(char* fileLoc);
+    Texture(const char *fileLoc);
     ~Texture();
 
     void LoadTexture();
