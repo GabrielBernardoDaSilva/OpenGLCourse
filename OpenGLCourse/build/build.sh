@@ -1,1 +1,1 @@
-make && ./OpenGLCourse
+cmake .. && make && ./OpenGLCourse

@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Camera.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Camera.cpp.o"
+  "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Light.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o"
+  "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Texture.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/main.cpp.o"
   )
