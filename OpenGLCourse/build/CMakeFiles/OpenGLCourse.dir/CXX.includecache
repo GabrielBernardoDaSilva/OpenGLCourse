@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/Camera.h
+GL/glew.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+GLFW/glfw3.h
+-
+
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Camera.cpp
+Camera.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Camera.h
+iostream
+-
+
