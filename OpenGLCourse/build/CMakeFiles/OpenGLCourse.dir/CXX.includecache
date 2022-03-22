@@ -16,6 +16,12 @@ glm/gtc/matrix_transform.hpp
 GLFW/glfw3.h
 -
 
+../includes/CommonValues.h
+
+../includes/DirectionalLight.h
+Light.h
+../includes/Light.h
+
 ../includes/Light.h
 GL/glew.h
 -
@@ -30,6 +36,10 @@ GL/glew.h
 GL/glew.h
 -
 
+../includes/PointLight.h
+Light.h
+../includes/Light.h
+
 ../includes/Shader.h
 cstdio
 -
@@ -41,6 +51,12 @@ fstream
 -
 GL/glew.h
 -
+DirectionalLight.h
+../includes/DirectionalLight.h
+PointLight.h
+../includes/PointLight.h
+CommonValues.h
+../includes/CommonValues.h
 
 ../includes/Texture.h
 GL/glew.h
@@ -88,6 +104,12 @@ intrin.h
 arm_neon.h
 -
 
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp
+Shader.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.h
+cstring
+-
+
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp
 iostream
 -
@@ -107,6 +129,8 @@ glm/gtc/matrix_transform.hpp
 -
 glm/gtc/type_ptr.hpp
 -
+CommonValues.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/CommonValues.h
 Mesh.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.h
 Shader.h
@@ -117,8 +141,10 @@ Camera.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Camera.h
 Texture.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Texture.h
-Light.h
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.h
+DirectionalLight.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/DirectionalLight.h
+PointLight.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.h
 Material.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.h
 

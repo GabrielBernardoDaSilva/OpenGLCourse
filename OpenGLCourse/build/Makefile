@@ -150,6 +150,33 @@ src/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Camera.cpp.s
 .PHONY : src/Camera.cpp.s
 
+src/DirectionalLight.o: src/DirectionalLight.cpp.o
+
+.PHONY : src/DirectionalLight.o
+
+# target to build an object file
+src/DirectionalLight.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/DirectionalLight.cpp.o
+.PHONY : src/DirectionalLight.cpp.o
+
+src/DirectionalLight.i: src/DirectionalLight.cpp.i
+
+.PHONY : src/DirectionalLight.i
+
+# target to preprocess a source file
+src/DirectionalLight.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/DirectionalLight.cpp.i
+.PHONY : src/DirectionalLight.cpp.i
+
+src/DirectionalLight.s: src/DirectionalLight.cpp.s
+
+.PHONY : src/DirectionalLight.s
+
+# target to generate assembly for a file
+src/DirectionalLight.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/DirectionalLight.cpp.s
+.PHONY : src/DirectionalLight.cpp.s
+
 src/Light.o: src/Light.cpp.o
 
 .PHONY : src/Light.o
@@ -230,6 +257,33 @@ src/Mesh.s: src/Mesh.cpp.s
 src/Mesh.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.s
 .PHONY : src/Mesh.cpp.s
+
+src/PointLight.o: src/PointLight.cpp.o
+
+.PHONY : src/PointLight.o
+
+# target to build an object file
+src/PointLight.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o
+.PHONY : src/PointLight.cpp.o
+
+src/PointLight.i: src/PointLight.cpp.i
+
+.PHONY : src/PointLight.i
+
+# target to preprocess a source file
+src/PointLight.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.i
+.PHONY : src/PointLight.cpp.i
+
+src/PointLight.s: src/PointLight.cpp.s
+
+.PHONY : src/PointLight.s
+
+# target to generate assembly for a file
+src/PointLight.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.s
+.PHONY : src/PointLight.cpp.s
 
 src/Shader.o: src/Shader.cpp.o
 
@@ -351,6 +405,9 @@ help:
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
+	@echo "... src/DirectionalLight.o"
+	@echo "... src/DirectionalLight.i"
+	@echo "... src/DirectionalLight.s"
 	@echo "... src/Light.o"
 	@echo "... src/Light.i"
 	@echo "... src/Light.s"
@@ -360,6 +417,9 @@ help:
 	@echo "... src/Mesh.o"
 	@echo "... src/Mesh.i"
 	@echo "... src/Mesh.s"
+	@echo "... src/PointLight.o"
+	@echo "... src/PointLight.i"
+	@echo "... src/PointLight.s"
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"

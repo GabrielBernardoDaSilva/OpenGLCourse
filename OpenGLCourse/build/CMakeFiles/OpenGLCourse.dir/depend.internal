@@ -4,6 +4,10 @@
 CMakeFiles/OpenGLCourse.dir/src/Camera.cpp.o
  ../includes/Camera.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Camera.cpp
+CMakeFiles/OpenGLCourse.dir/src/DirectionalLight.cpp.o
+ ../includes/DirectionalLight.h
+ ../includes/Light.h
+ /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/DirectionalLight.cpp
 CMakeFiles/OpenGLCourse.dir/src/Light.cpp.o
  ../includes/Light.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.cpp
@@ -13,7 +17,15 @@ CMakeFiles/OpenGLCourse.dir/src/Material.cpp.o
 CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o
  ../includes/Mesh.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.cpp
+CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o
+ ../includes/Light.h
+ ../includes/PointLight.h
+ /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.cpp
 CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o
+ ../includes/CommonValues.h
+ ../includes/DirectionalLight.h
+ ../includes/Light.h
+ ../includes/PointLight.h
  ../includes/Shader.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp
 CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o
@@ -25,9 +37,12 @@ CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.cpp
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o
  ../includes/Camera.h
+ ../includes/CommonValues.h
+ ../includes/DirectionalLight.h
  ../includes/Light.h
  ../includes/Material.h
  ../includes/Mesh.h
+ ../includes/PointLight.h
  ../includes/Shader.h
  ../includes/Texture.h
  ../includes/Window.h

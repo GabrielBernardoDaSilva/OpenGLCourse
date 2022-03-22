@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/./includes  -g   -std=gnu++11 -o CMakeFiles/OpenGLCourse.dir/src/DirectionalLight.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/DirectionalLight.cpp",
+  "file": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/DirectionalLight.cpp"
+},
+{
+  "directory": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build",
   "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/./includes  -g   -std=gnu++11 -o CMakeFiles/OpenGLCourse.dir/src/Light.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.cpp",
   "file": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.cpp"
 },
@@ -18,6 +23,11 @@
   "directory": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build",
   "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/./includes  -g   -std=gnu++11 -o CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.cpp",
   "file": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.cpp"
+},
+{
+  "directory": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/./includes  -g   -std=gnu++11 -o CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.cpp",
+  "file": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.cpp"
 },
 {
   "directory": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build",
