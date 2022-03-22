@@ -177,6 +177,33 @@ src/Light.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Light.cpp.s
 .PHONY : src/Light.cpp.s
 
+src/Material.o: src/Material.cpp.o
+
+.PHONY : src/Material.o
+
+# target to build an object file
+src/Material.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Material.cpp.o
+.PHONY : src/Material.cpp.o
+
+src/Material.i: src/Material.cpp.i
+
+.PHONY : src/Material.i
+
+# target to preprocess a source file
+src/Material.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Material.cpp.i
+.PHONY : src/Material.cpp.i
+
+src/Material.s: src/Material.cpp.s
+
+.PHONY : src/Material.s
+
+# target to generate assembly for a file
+src/Material.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Material.cpp.s
+.PHONY : src/Material.cpp.s
+
 src/Mesh.o: src/Mesh.cpp.o
 
 .PHONY : src/Mesh.o
@@ -327,6 +354,9 @@ help:
 	@echo "... src/Light.o"
 	@echo "... src/Light.i"
 	@echo "... src/Light.s"
+	@echo "... src/Material.o"
+	@echo "... src/Material.i"
+	@echo "... src/Material.s"
 	@echo "... src/Mesh.o"
 	@echo "... src/Mesh.i"
 	@echo "... src/Mesh.s"

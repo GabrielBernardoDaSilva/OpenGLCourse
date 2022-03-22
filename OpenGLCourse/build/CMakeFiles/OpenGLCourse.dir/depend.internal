@@ -7,6 +7,9 @@ CMakeFiles/OpenGLCourse.dir/src/Camera.cpp.o
 CMakeFiles/OpenGLCourse.dir/src/Light.cpp.o
  ../includes/Light.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.cpp
+CMakeFiles/OpenGLCourse.dir/src/Material.cpp.o
+ ../includes/Material.h
+ /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.cpp
 CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o
  ../includes/Mesh.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.cpp
@@ -23,6 +26,7 @@ CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o
  ../includes/Camera.h
  ../includes/Light.h
+ ../includes/Material.h
  ../includes/Mesh.h
  ../includes/Shader.h
  ../includes/Texture.h

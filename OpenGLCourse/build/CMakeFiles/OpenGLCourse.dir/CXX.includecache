@@ -22,6 +22,10 @@ GL/glew.h
 glm/glm.hpp
 -
 
+../includes/Material.h
+GL/glew.h
+-
+
 ../includes/Mesh.h
 GL/glew.h
 -
@@ -84,22 +88,6 @@ intrin.h
 arm_neon.h
 -
 
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.cpp
-Light.h
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.h
-
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp
-Shader.h
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.h
-cstring
--
-
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Texture.cpp
-Texture.h
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Texture.h
-iostream
--
-
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp
 iostream
 -
@@ -131,4 +119,6 @@ Texture.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Texture.h
 Light.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Light.h
+Material.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.h
 
