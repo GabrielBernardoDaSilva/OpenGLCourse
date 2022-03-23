@@ -148,9 +148,22 @@ CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp -o CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.s
 
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o: CMakeFiles/OpenGLCourse.dir/flags.make
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o: ../src/SpotLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.cpp
+
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.cpp > CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.i
+
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.cpp -o CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.s
+
 CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o: CMakeFiles/OpenGLCourse.dir/flags.make
 CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o: ../src/Texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Texture.cpp
 
 CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.s: cmake_force
 
 CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o: CMakeFiles/OpenGLCourse.dir/flags.make
 CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o: ../src/Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.cpp
 
 CMakeFiles/OpenGLCourse.dir/src/Window.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/OpenGLCourse.dir/src/Window.cpp.s: cmake_force
 
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: CMakeFiles/OpenGLCourse.dir/flags.make
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OpenGLCourse.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/OpenGLCourse.dir/src/main.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGLCourse.dir/src/main.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp
 
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.i: cmake_force
@@ -196,6 +209,7 @@ OpenGLCourse_OBJECTS = \
 "CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o" \
 "CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o" \
 "CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o" \
+"CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o" \
 "CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o" \
 "CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o" \
 "CMakeFiles/OpenGLCourse.dir/src/main.cpp.o"
@@ -210,6 +224,7 @@ OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/Material.cpp.o
 OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o
 OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o
 OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o
+OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o
 OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o
 OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o
 OpenGLCourse: CMakeFiles/OpenGLCourse.dir/src/main.cpp.o
@@ -218,7 +233,7 @@ OpenGLCourse: /usr/lib/x86_64-linux-gnu/libGLEW.so
 OpenGLCourse: /usr/lib/x86_64-linux-gnu/libGL.so
 OpenGLCourse: /usr/lib/x86_64-linux-gnu/libGLU.so
 OpenGLCourse: CMakeFiles/OpenGLCourse.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable OpenGLCourse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable OpenGLCourse"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGLCourse.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

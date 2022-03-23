@@ -312,6 +312,33 @@ src/Shader.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.s
 .PHONY : src/Shader.cpp.s
 
+src/SpotLight.o: src/SpotLight.cpp.o
+
+.PHONY : src/SpotLight.o
+
+# target to build an object file
+src/SpotLight.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o
+.PHONY : src/SpotLight.cpp.o
+
+src/SpotLight.i: src/SpotLight.cpp.i
+
+.PHONY : src/SpotLight.i
+
+# target to preprocess a source file
+src/SpotLight.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.i
+.PHONY : src/SpotLight.cpp.i
+
+src/SpotLight.s: src/SpotLight.cpp.s
+
+.PHONY : src/SpotLight.s
+
+# target to generate assembly for a file
+src/SpotLight.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.s
+.PHONY : src/SpotLight.cpp.s
+
 src/Texture.o: src/Texture.cpp.o
 
 .PHONY : src/Texture.o
@@ -423,6 +450,9 @@ help:
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"
+	@echo "... src/SpotLight.o"
+	@echo "... src/SpotLight.i"
+	@echo "... src/SpotLight.s"
 	@echo "... src/Texture.o"
 	@echo "... src/Texture.i"
 	@echo "... src/Texture.s"

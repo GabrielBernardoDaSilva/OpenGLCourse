@@ -26,7 +26,13 @@ CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o: ../includes/DirectionalLight.h
 CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o: ../includes/Light.h
 CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o: ../includes/PointLight.h
 CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o: ../includes/Shader.h
+CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o: ../includes/SpotLight.h
 CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o: ../src/Shader.cpp
+
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o: ../includes/Light.h
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o: ../includes/PointLight.h
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o: ../includes/SpotLight.h
+CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o: ../src/SpotLight.cpp
 
 CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o: ../includes/Texture.h
 CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o: ../includes/stb_images.h
@@ -43,6 +49,7 @@ CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/Material.h
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/Mesh.h
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/PointLight.h
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/Shader.h
+CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/SpotLight.h
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/Texture.h
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/Window.h
 CMakeFiles/OpenGLCourse.dir/src/main.cpp.o: ../includes/stb_images.h

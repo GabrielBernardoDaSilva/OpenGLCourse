@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o"
+  "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Texture.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/main.cpp.o"

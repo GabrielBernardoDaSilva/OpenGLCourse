@@ -57,6 +57,12 @@ PointLight.h
 ../includes/PointLight.h
 CommonValues.h
 ../includes/CommonValues.h
+SpotLight.h
+../includes/SpotLight.h
+
+../includes/SpotLight.h
+PointLight.h
+../includes/PointLight.h
 
 ../includes/Texture.h
 GL/glew.h
@@ -141,4 +147,6 @@ PointLight.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.h
 Material.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.h
+SpotLight.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.h
 

@@ -22,6 +22,7 @@
 #include "DirectionalLight.h"
 #include "PointLight.h"
 #include "Material.h"
+#include "SpotLight.h"
 
 #define PI 3.14159265f
 
@@ -40,6 +41,7 @@ Material dullMaterial;
 
 DirectionalLight mainLight;
 PointLight pointLights[MAX_POINT_LIGHTS];
+SpotLight spotLights[MAX_SPOT_LIGHTS];
 
 GLfloat deltaTime = 0.0f;
 GLfloat lastTime = 0.0f;
@@ -109,7 +111,6 @@ void createObjects()
 		1.0f, -1.0f, -0.6f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
 		0.0f, 1.0f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f, 0.0f};
 
-
 	GLfloat floor[] = {
 		-10.0f, 0.0f, -10.0f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f,
 		10.0f, 0.0f, -10.0f, 10.0f, 0.0f, 0.0f, -1.0f, 0.0f,
@@ -159,8 +160,9 @@ int main()
 	shinyMaterial = Material(1.0f, 32.0f);
 	dullMaterial = Material(0.3f, 4.0f);
 
-	mainLight = DirectionalLight(1.0f, 1.0f, 1.0f, 0.2f,
-								 2.0f, -1.0f, -2.0f, 0.3f);
+	mainLight = DirectionalLight(1.0f, 1.0f, 1.0f,
+								 0.1f, 0.1f,
+								 0.0f, 0.0f, -1.0f);
 
 	unsigned int pointLightCount = 0;
 
@@ -168,12 +170,28 @@ int main()
 								0.1f, 1.0f,
 								4.0f, 0.0f, 0.0f,
 								0.3f, 0.2f, 0.1f);
-	pointLightCount++;
+	// pointLightCount++;
 	pointLights[1] = PointLight(0.0f, 1.0f, 0.0f,
 								0.0f, 1.0f,
 								-4.0f, 2.0f, 0.0f,
 								0.3f, 0.1f, 0.1f);
-	pointLightCount++;
+	// pointLightCount++;
+
+	unsigned int spotLightCount = 0;
+	spotLights[0] = SpotLight(1.0f, 1.0f, 1.0f,
+							  0.0f, 2.0f,
+							  0.0f, 0.0f, 0.0f,
+							  0.0f, -1.0f, 0.0f,
+							  1.0f, 0.0f, 0.0f,
+							  20.0f);
+	spotLightCount++;
+	spotLights[1] = SpotLight(1.0f, 1.0f, 1.0f,
+							  0.0f, 1.0f,
+							  0.0f, -1.5f, 0.0f,
+							  -100.0f, -1.0f, 0.0f,
+							  1.0f, 0.0f, 0.0f,
+							  20.0f);
+	spotLightCount++;
 
 	GLuint uniformProjection = 0,
 		   uniformModel = 0,
@@ -210,8 +228,13 @@ int main()
 		uniformShininess = shaderList[0].GetShininessLocation();
 		uniformEyePosition = shaderList[0].GetEyePositionLocation();
 
+		glm::vec3 lowerLight = camera.GetCameraPosition();
+		lowerLight.y -= 0.3f;
+		spotLights[0].SetFlash(lowerLight, camera.GetCameraDirection());
+
 		shaderList[0].SetDirectionalLight(&mainLight);
 		shaderList[0].SetPointLights(pointLights, pointLightCount);
+		shaderList[0].SetSpotLights(spotLights, spotLightCount);
 
 		glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
 		glUniformMatrix4fv(uniformView, 1, GL_FALSE, glm::value_ptr(camera.CalculateViewMatrix()));
@@ -238,7 +261,6 @@ int main()
 		dirtTexture.UseTexture();
 		dullMaterial.UseMaterials(uniformSpecularIntensity, uniformShininess);
 		meshList[1]->RenderMesh();
-
 
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
