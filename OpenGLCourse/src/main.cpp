@@ -109,16 +109,16 @@ void createObjects()
 		1.0f, -1.0f, -0.6f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
 		0.0f, 1.0f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f, 0.0f};
 
+
 	GLfloat floor[] = {
-		-10.0f, 0.0f, -10.0f,
-		10.0f, 0.0f, -10.0f,
-		-10.0f, 0.0f, 10.0f,
-		10.0f, 0.0f, 10.0f};
+		-10.0f, 0.0f, -10.0f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f,
+		10.0f, 0.0f, -10.0f, 10.0f, 0.0f, 0.0f, -1.0f, 0.0f,
+		-10.0f, 0.0f, 10.0f, 0.0f, 10.0f, 0.0f, -1.0f, 0.0f,
+		10.0f, 0.0f, 10.0f, 10.0f, 10.0f, 0.0f, -1.0f, 0.0f};
 
 	unsigned int floorIndices[] = {
 		0, 2, 1,
-		1, 2, 3
-	};
+		1, 2, 3};
 
 	calcAvarageNormals(indices, 12, vertices, 32, 8, 5);
 
@@ -128,6 +128,10 @@ void createObjects()
 	Mesh *obj2 = new Mesh();
 	obj2->CreateMesh(vertices, indices, 32, 12);
 	meshList.push_back(obj2);
+
+	Mesh *obj3 = new Mesh();
+	obj3->CreateMesh(floor, floorIndices, 32, 6);
+	meshList.push_back(obj3);
 }
 
 void createShaders()
@@ -145,7 +149,7 @@ int main()
 
 	createObjects();
 	createShaders();
-	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f, 1.0f, 0.25f);
+	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f, 5.0f, 1.0f);
 
 	brickTexture = Texture("Texture/brick.png");
 	brickTexture.LoadTexture();
@@ -162,7 +166,7 @@ int main()
 
 	pointLights[0] = PointLight(1.0f, 0.0f, 0.0f,
 								0.1f, 1.0f,
-								-4.0f, 0.0f, 0.0f,
+								4.0f, 0.0f, 0.0f,
 								0.3f, 0.2f, 0.1f);
 	pointLightCount++;
 	pointLights[1] = PointLight(0.0f, 1.0f, 0.0f,
@@ -234,6 +238,17 @@ int main()
 		dirtTexture.UseTexture();
 		dullMaterial.UseMaterials(uniformSpecularIntensity, uniformShininess);
 		meshList[1]->RenderMesh();
+
+
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
+		// model = glm::rotate(model, currentAngle * toRadins, glm::vec3(0.0f, 1.0f, 0.0f));
+		// model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
+
+		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+		dirtTexture.UseTexture();
+		dullMaterial.UseMaterials(uniformSpecularIntensity, uniformShininess);
+		meshList[2]->RenderMesh();
 
 		glUseProgram(0);
 

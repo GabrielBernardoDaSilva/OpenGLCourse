@@ -104,12 +104,6 @@ intrin.h
 arm_neon.h
 -
 
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp
-Shader.h
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.h
-cstring
--
-
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp
 iostream
 -
