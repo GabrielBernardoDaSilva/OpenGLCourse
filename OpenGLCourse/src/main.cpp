@@ -23,6 +23,7 @@
 #include "PointLight.h"
 #include "Material.h"
 #include "SpotLight.h"
+#include "Model.h"
 
 #define PI 3.14159265f
 
@@ -38,6 +39,9 @@ Texture dirtTexture;
 
 Material shinyMaterial;
 Material dullMaterial;
+
+Model xwing;
+Model blackhawk;
 
 DirectionalLight mainLight;
 PointLight pointLights[MAX_POINT_LIGHTS];
@@ -153,12 +157,17 @@ int main()
 	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f, 5.0f, 1.0f);
 
 	brickTexture = Texture("Texture/brick.png");
-	brickTexture.LoadTexture();
+	brickTexture.LoadTextureA();
 	dirtTexture = Texture("Texture/dirt.png");
-	dirtTexture.LoadTexture();
+	dirtTexture.LoadTextureA();
 
 	shinyMaterial = Material(1.0f, 32.0f);
 	dullMaterial = Material(0.3f, 4.0f);
+
+	xwing = Model();
+	xwing.LoadModel("models/x-wing.obj");
+	blackhawk = Model();
+	blackhawk.LoadModel("models/uh60.obj");
 
 	mainLight = DirectionalLight(1.0f, 1.0f, 1.0f,
 								 0.1f, 0.1f,
@@ -271,6 +280,23 @@ int main()
 		dirtTexture.UseTexture();
 		dullMaterial.UseMaterials(uniformSpecularIntensity, uniformShininess);
 		meshList[2]->RenderMesh();
+
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
+		// model = glm::rotate(model, currentAngle * toRadins, glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.001f, 0.001f, 0.001f));
+
+		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+		shinyMaterial.UseMaterials(uniformSpecularIntensity, uniformShininess);
+		xwing.RenderModel();
+
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(-3.0f, 2.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.4f, 0.4f, 0.4f));
+		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+		shinyMaterial.UseMaterials(uniformSpecularIntensity, uniformShininess);
+		blackhawk.RenderModel();
 
 		glUseProgram(0);
 

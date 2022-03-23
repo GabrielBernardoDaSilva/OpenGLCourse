@@ -36,6 +36,22 @@ GL/glew.h
 GL/glew.h
 -
 
+../includes/Model.h
+vector
+-
+string
+-
+assimp/Importer.hpp
+-
+assimp/scene.h
+-
+assimp/postprocess.h
+-
+Mesh.h
+../includes/Mesh.h
+Texture.h
+../includes/Texture.h
+
 ../includes/PointLight.h
 Light.h
 ../includes/Light.h
@@ -149,4 +165,6 @@ Material.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.h
 SpotLight.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.h
+Model.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Model.h
 
