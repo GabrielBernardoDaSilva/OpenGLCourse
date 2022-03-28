@@ -11,7 +11,6 @@
 #include "CommonValues.h"
 #include "SpotLight.h"
 
-
 class Shader
 {
 private:
@@ -19,7 +18,8 @@ private:
 	int spotLightCount;
 
 	GLuint shaderID, uniformModel, uniformProjection, uniformView, uniformEyePosition,
-		uniformSpecularIntensity, uniformShininess;
+		uniformSpecularIntensity, uniformShininess, uniformDirectionalLightTransform, uniformDirectionalShadowMap,
+		uniformTexture;
 
 	struct
 	{
@@ -29,7 +29,6 @@ private:
 
 		GLuint uniformDirection;
 	} uniformDirectionalLight;
-
 
 	GLuint uniformPointLightCount;
 	struct
@@ -46,7 +45,7 @@ private:
 
 	GLuint uniformSpotLightCount;
 
-	struct 
+	struct
 	{
 		GLuint uniformColour;
 		GLuint uniformAmbientIntensity;
@@ -82,9 +81,13 @@ public:
 	GLuint GetSpecularIntensityLocation();
 	GLuint GetShininessLocation();
 
+
 	void SetDirectionalLight(DirectionalLight *dLight);
 	void SetPointLights(PointLight *pLights, unsigned int lightCount);
 	void SetSpotLights(SpotLight *sLights, unsigned int lightCount);
+	void SetTexture(GLuint textureUnit);
+	void SetDirectionalShadowMap(GLuint textureUnit);
+	void SetDirectionalLightTransform(glm::mat4 *lTransform);
 
 	void UseShader();
 	void ClearShade();

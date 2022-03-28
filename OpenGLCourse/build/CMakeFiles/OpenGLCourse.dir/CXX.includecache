@@ -27,6 +27,10 @@ GL/glew.h
 -
 glm/glm.hpp
 -
+glm/gtc/matrix_transform.hpp
+-
+ShadowMap.h
+../includes/ShadowMap.h
 
 ../includes/Material.h
 GL/glew.h
@@ -75,6 +79,10 @@ CommonValues.h
 ../includes/CommonValues.h
 SpotLight.h
 ../includes/SpotLight.h
+
+../includes/ShadowMap.h
+GL/glew.h
+-
 
 ../includes/SpotLight.h
 PointLight.h

@@ -41,6 +41,11 @@
 },
 {
   "directory": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/./includes  -g   -std=gnu++11 -o CMakeFiles/OpenGLCourse.dir/src/ShadowMap.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/ShadowMap.cpp",
+  "file": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/ShadowMap.cpp"
+},
+{
+  "directory": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build",
   "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/./includes  -g   -std=gnu++11 -o CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o -c /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.cpp",
   "file": "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.cpp"
 },

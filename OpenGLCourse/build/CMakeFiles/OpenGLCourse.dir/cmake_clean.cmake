@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OpenGLCourse.dir/src/Model.cpp.o"
   "CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o"
   "CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o"
+  "CMakeFiles/OpenGLCourse.dir/src/ShadowMap.cpp.o"
   "CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o"
   "CMakeFiles/OpenGLCourse.dir/src/Texture.cpp.o"
   "CMakeFiles/OpenGLCourse.dir/src/Window.cpp.o"

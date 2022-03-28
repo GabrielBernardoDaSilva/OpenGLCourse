@@ -101,8 +101,7 @@ void Model::LoadMaterials(const aiScene *scene)
                 int idx = std::string(path.data).rfind("\\");
                 std::string filename = std::string(path.data).substr(idx + 1);
 
-                std::string texPath = std::string("Texture/") + filename;
-
+                std::string texPath = std::string("./Texture/") + filename;
                 textureList[i] = new Texture(texPath.c_str());
 
                 if (!textureList[i]->LoadTexture())
