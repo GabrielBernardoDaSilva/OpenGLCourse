@@ -63,12 +63,16 @@ private:
 	} uniformSpotLight[MAX_SPOT_LIGHTS];
 
 	void CompileShade(const char *vertexCode, const char *fragmentCode);
+	void CompileShade(const char *vertexCode, const char *geomtryCode, const char *fragmentCode);
 	void AddShader(GLuint theProgram, const char *shaderCode, GLenum shaderType);
+
+	void CompileProgram();
 
 public:
 	Shader();
 	void CreateFromString(const char *vertexCode, const char *fragmentCode);
 	void CreateFromFile(const char *vertexPath, const char *fragmentPath);
+	void CreateFromFile(const char *vertexPath, const char *geometryLocation, const char *fragmentPath);
 
 	std::string ReadFile(const char *fileLocation);
 
@@ -84,8 +88,6 @@ public:
 	GLuint GetShininessLocation();
 	GLuint GetFarPlaneLocation();
 	GLuint GetOmniLightPosLocation();
-	
-
 
 	void SetDirectionalLight(DirectionalLight *dLight);
 	void SetPointLights(PointLight *pLights, unsigned int lightCount);
@@ -94,7 +96,6 @@ public:
 	void SetDirectionalShadowMap(GLuint textureUnit);
 	void SetDirectionalLightTransform(glm::mat4 *lTransform);
 	void SetLightMatrices(std::vector<glm::mat4> lightMatrices);
-
 
 	void UseShader();
 	void ClearShade();
