@@ -72,7 +72,7 @@ public:
 	Shader();
 	void CreateFromString(const char *vertexCode, const char *fragmentCode);
 	void CreateFromFile(const char *vertexPath, const char *fragmentPath);
-	void CreateFromFile(const char *vertexPath, const char *geometryLocation, const char *fragmentPath);
+	void CreateFromFile(const char *vertexLocation, const char *geometryLocation, const char *fragmentLocation);
 
 	std::string ReadFile(const char *fileLocation);
 

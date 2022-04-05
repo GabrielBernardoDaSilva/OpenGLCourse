@@ -56,9 +56,17 @@ Mesh.h
 Texture.h
 ../includes/Texture.h
 
+../includes/OmniShadowMap.h
+ShadowMap.h
+../includes/ShadowMap.h
+
 ../includes/PointLight.h
 Light.h
 ../includes/Light.h
+OmniShadowMap.h
+../includes/OmniShadowMap.h
+vector
+-
 
 ../includes/Shader.h
 cstdio

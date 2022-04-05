@@ -25,8 +25,13 @@ CMakeFiles/OpenGLCourse.dir/src/Model.cpp.o
  ../includes/Texture.h
  ../includes/stb_images.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Model.cpp
+CMakeFiles/OpenGLCourse.dir/src/OmniShadowMap.cpp.o
+ ../includes/OmniShadowMap.h
+ ../includes/ShadowMap.h
+ /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/OmniShadowMap.cpp
 CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o
  ../includes/Light.h
+ ../includes/OmniShadowMap.h
  ../includes/PointLight.h
  ../includes/ShadowMap.h
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.cpp
@@ -34,6 +39,7 @@ CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o
  ../includes/CommonValues.h
  ../includes/DirectionalLight.h
  ../includes/Light.h
+ ../includes/OmniShadowMap.h
  ../includes/PointLight.h
  ../includes/Shader.h
  ../includes/ShadowMap.h
@@ -44,6 +50,7 @@ CMakeFiles/OpenGLCourse.dir/src/ShadowMap.cpp.o
  /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/ShadowMap.cpp
 CMakeFiles/OpenGLCourse.dir/src/SpotLight.cpp.o
  ../includes/Light.h
+ ../includes/OmniShadowMap.h
  ../includes/PointLight.h
  ../includes/ShadowMap.h
  ../includes/SpotLight.h
@@ -63,6 +70,7 @@ CMakeFiles/OpenGLCourse.dir/src/main.cpp.o
  ../includes/Material.h
  ../includes/Mesh.h
  ../includes/Model.h
+ ../includes/OmniShadowMap.h
  ../includes/PointLight.h
  ../includes/Shader.h
  ../includes/ShadowMap.h
