@@ -93,6 +93,21 @@ void Shader::CompileShade(const char *vertexCode,const char* geometryCode, const
 	CompileProgram();	
 }
 
+void Shader::Validate()
+{
+	GLint result = 0;
+	GLchar eLog[1024] = { 0 };
+
+	glValidateProgram(shaderID);
+	glGetProgramiv(shaderID, GL_VALIDATE_STATUS, &result);
+	if (!result)
+	{
+		glGetProgramInfoLog(shaderID, sizeof(eLog), NULL, eLog);
+		printf("Error validating program: '%s'\n", eLog);
+		return;
+	}
+}
+
 GLuint Shader::GetProjectionLocation()
 {
 	return uniformProjection;
@@ -197,6 +212,14 @@ void Shader::SetDirectionalLightTransform(glm::mat4 *lTransform)
 }
 
 void Shader::SetLightMatrices(std::vector<glm::mat4> lightMatrices)
+{
+	for (size_t i = 0; i < 6; i++)
+	{
+		glUniformMatrix4fv(uniformLightMatrices[i], 1, GL_FALSE, glm::value_ptr(lightMatrices[i]));
+	}
+}
+
+void Shader::SetOmniLightMatrices(std::vector<glm::mat4> lightMatrices)
 {
 	for (size_t i = 0; i < 6; i++)
 	{

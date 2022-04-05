@@ -8,6 +8,7 @@ class SpotLight : public PointLight
 private:
     glm::vec3 direction;
     GLfloat edge, procEdge;
+    bool isOn;
 
 public:
     SpotLight();
@@ -25,7 +26,11 @@ public:
                   GLuint constantLocation, GLuint linearLocation, GLuint exponentLocation,
                   GLuint edgeLocation);
 
+
+
     void SetFlash(glm::vec3 pos, glm::vec3 dir);
+
+    void Toggle() { isOn = !isOn; }
 };
 
 #endif // __SPOTLIGHT_H__

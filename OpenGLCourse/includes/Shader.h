@@ -96,9 +96,11 @@ public:
 	void SetDirectionalShadowMap(GLuint textureUnit);
 	void SetDirectionalLightTransform(glm::mat4 *lTransform);
 	void SetLightMatrices(std::vector<glm::mat4> lightMatrices);
+	void SetOmniLightMatrices(std::vector<glm::mat4> lightMatrices);
 
 	void UseShader();
 	void ClearShade();
+	void Validate();
 
 	~Shader();
 };
