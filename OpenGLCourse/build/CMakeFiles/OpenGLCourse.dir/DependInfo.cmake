@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Material.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Mesh.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Model.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Model.cpp.o"
+  "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/OmniShadowMap.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/OmniShadowMap.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/PointLight.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/Shader.cpp.o"
   "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/ShadowMap.cpp" "/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir/src/ShadowMap.cpp.o"

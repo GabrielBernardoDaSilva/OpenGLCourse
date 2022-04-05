@@ -19,7 +19,9 @@ private:
 
 	GLuint shaderID, uniformModel, uniformProjection, uniformView, uniformEyePosition,
 		uniformSpecularIntensity, uniformShininess, uniformDirectionalLightTransform, uniformDirectionalShadowMap,
-		uniformTexture;
+		uniformTexture, uniformOmniLightPos, uniformFarPlane;
+
+	GLuint uniformLightMatrices[6];
 
 	struct
 	{
@@ -80,6 +82,9 @@ public:
 	GLuint GetEyePositionLocation();
 	GLuint GetSpecularIntensityLocation();
 	GLuint GetShininessLocation();
+	GLuint GetFarPlaneLocation();
+	GLuint GetOmniLightPosLocation();
+	
 
 
 	void SetDirectionalLight(DirectionalLight *dLight);
@@ -88,6 +93,8 @@ public:
 	void SetTexture(GLuint textureUnit);
 	void SetDirectionalShadowMap(GLuint textureUnit);
 	void SetDirectionalLightTransform(glm::mat4 *lTransform);
+	void SetLightMatrices(std::vector<glm::mat4> lightMatrices);
+
 
 	void UseShader();
 	void ClearShade();

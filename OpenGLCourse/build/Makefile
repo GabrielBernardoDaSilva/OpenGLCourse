@@ -285,6 +285,33 @@ src/Model.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/Model.cpp.s
 .PHONY : src/Model.cpp.s
 
+src/OmniShadowMap.o: src/OmniShadowMap.cpp.o
+
+.PHONY : src/OmniShadowMap.o
+
+# target to build an object file
+src/OmniShadowMap.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/OmniShadowMap.cpp.o
+.PHONY : src/OmniShadowMap.cpp.o
+
+src/OmniShadowMap.i: src/OmniShadowMap.cpp.i
+
+.PHONY : src/OmniShadowMap.i
+
+# target to preprocess a source file
+src/OmniShadowMap.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/OmniShadowMap.cpp.i
+.PHONY : src/OmniShadowMap.cpp.i
+
+src/OmniShadowMap.s: src/OmniShadowMap.cpp.s
+
+.PHONY : src/OmniShadowMap.s
+
+# target to generate assembly for a file
+src/OmniShadowMap.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGLCourse.dir/build.make CMakeFiles/OpenGLCourse.dir/src/OmniShadowMap.cpp.s
+.PHONY : src/OmniShadowMap.cpp.s
+
 src/PointLight.o: src/PointLight.cpp.o
 
 .PHONY : src/PointLight.o
@@ -501,6 +528,9 @@ help:
 	@echo "... src/Model.o"
 	@echo "... src/Model.i"
 	@echo "... src/Model.s"
+	@echo "... src/OmniShadowMap.o"
+	@echo "... src/OmniShadowMap.i"
+	@echo "... src/OmniShadowMap.s"
 	@echo "... src/PointLight.o"
 	@echo "... src/PointLight.i"
 	@echo "... src/PointLight.s"

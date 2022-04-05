@@ -2,20 +2,31 @@
 #define __POINTLIGHT_H__
 
 #include "Light.h"
+#include "OmniShadowMap.h"
 
-class PointLight: public Light
+
+#include <vector>
+
+class PointLight : public Light
 {
 public:
     PointLight();
-    PointLight(GLfloat red, GLfloat green, GLfloat blue,
-               GLfloat aIntensity, GLfloat dIntensity,
-               GLfloat xPos, GLfloat yPos, GLfloat zPos,
-               GLfloat con, GLfloat lin, GLfloat exp);
+    PointLight(
+        GLuint shadowWidth, GLuint shadowHeight,
+        GLfloat near, GLfloat far,
+        GLfloat red, GLfloat green, GLfloat blue,
+        GLfloat aIntensity, GLfloat dIntensity,
+        GLfloat xPos, GLfloat yPos, GLfloat zPos,
+        GLfloat con, GLfloat lin, GLfloat exp);
     ~PointLight();
 
     void UseLight(GLuint ambientIntensityLocation, GLuint ambientColourLocation,
-                          GLuint diffuseIntensityLocation, GLuint positionLocation,
-                          GLuint constantLocation, GLuint linearLocation, GLuint exponentLocation);
+                  GLuint diffuseIntensityLocation, GLuint positionLocation,
+                  GLuint constantLocation, GLuint linearLocation, GLuint exponentLocation);
+
+    std::vector<glm::mat4> CalculateLightTransform();
+
+    GLfloat GetFarPlane() { return farPlane; }
 
 protected:
     glm::vec3 position;
@@ -23,6 +34,8 @@ protected:
     GLfloat constant;
     GLfloat linear;
     GLfloat exponent;
+
+    GLfloat farPlane;
 };
 
 #endif // __POINTLIGHT_H__
