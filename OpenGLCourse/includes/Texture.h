@@ -2,7 +2,7 @@
 #define TEXTURE_H
 
 #include <GL/glew.h>
-#include "stb_images.h"
+#include "CommonValues.h"
 
 
 class Texture

@@ -1,3 +1,0 @@
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/rebuild_cache.dir
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/edit_cache.dir
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/build/CMakeFiles/OpenGLCourse.dir
