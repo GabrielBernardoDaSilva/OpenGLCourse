@@ -3,18 +3,21 @@
 #include "ShadowMap.h"
 
 
-class OmniShadowMap : public ShadowMap
+class OmniShadowMap :
+	public ShadowMap
 {
 public:
-    OmniShadowMap();
-    ~OmniShadowMap();
+	OmniShadowMap();
 
-    bool Init(unsigned int width, unsigned int height);
+	bool Init(unsigned int width, unsigned int height);
 
-    void Write();
+	void Write();
 
-    void Read(GLenum textureUnit);
+	void Read(GLenum TextureUnit);
 
+	~OmniShadowMap();
 };
+
+
 
 #endif // __OMNISHADOWMAP_H__

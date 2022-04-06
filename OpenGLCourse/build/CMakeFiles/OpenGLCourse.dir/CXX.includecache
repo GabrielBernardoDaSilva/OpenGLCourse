@@ -69,22 +69,26 @@ vector
 -
 
 ../includes/Shader.h
-cstdio
--
-iostream
+stdio.h
 -
 string
+-
+iostream
 -
 fstream
 -
 GL/glew.h
 -
+glm/glm.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+CommonValues.h
+../includes/CommonValues.h
 DirectionalLight.h
 ../includes/DirectionalLight.h
 PointLight.h
 ../includes/PointLight.h
-CommonValues.h
-../includes/CommonValues.h
 SpotLight.h
 ../includes/SpotLight.h
 
@@ -142,10 +146,20 @@ intrin.h
 arm_neon.h
 -
 
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Model.cpp
+Model.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Model.h
 iostream
 -
-cstring
+
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.cpp
+Window.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.h
+
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/main.cpp
+stdio.h
+-
+string.h
 -
 cmath
 -
@@ -163,12 +177,12 @@ glm/gtc/type_ptr.hpp
 -
 CommonValues.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/CommonValues.h
+Window.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.h
 Mesh.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Mesh.h
 Shader.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Shader.h
-Window.h
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Window.h
 Camera.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Camera.h
 Texture.h
@@ -177,10 +191,10 @@ DirectionalLight.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/DirectionalLight.h
 PointLight.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/PointLight.h
-Material.h
-/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.h
 SpotLight.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/SpotLight.h
+Material.h
+/home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Material.h
 Model.h
 /home/gabriel/programs/cpp/OpenGLCourse/OpenGLCourse/src/Model.h
 

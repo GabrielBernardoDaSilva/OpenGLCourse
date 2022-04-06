@@ -1,30 +1,74 @@
 #pragma once
 
-#include <cstdio>
-#include <iostream>
+#include <stdio.h>
 #include <string>
+#include <iostream>
 #include <fstream>
 
 #include <GL/glew.h>
+
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+#include "CommonValues.h"
+
 #include "DirectionalLight.h"
 #include "PointLight.h"
-#include "CommonValues.h"
 #include "SpotLight.h"
 
 class Shader
 {
+public:
+	Shader();
+
+	void CreateFromString(const char* vertexCode, const char* fragmentCode);
+	void CreateFromFiles(const char* vertexLocation, const char* fragmentLocation);
+	void CreateFromFiles(const char* vertexLocation, const char* geometryLocation, const char* fragmentLocation);
+
+	void Validate();
+
+	std::string ReadFile(const char* fileLocation);
+
+	GLuint GetProjectionLocation();
+	GLuint GetModelLocation();
+	GLuint GetViewLocation();
+	GLuint GetAmbientIntensityLocation();
+	GLuint GetAmbientColourLocation();
+	GLuint GetDiffuseIntensityLocation();
+	GLuint GetDirectionLocation();
+	GLuint GetSpecularIntensityLocation();
+	GLuint GetShininessLocation();
+	GLuint GetEyePositionLocation();
+	GLuint GetOmniLightPosLocation();
+	GLuint GetFarPlaneLocation();
+
+	void SetDirectionalLight(DirectionalLight * dLight);
+	void SetPointLights(PointLight * pLight, unsigned int lightCount, unsigned int textureUnit, unsigned int offset);
+	void SetSpotLights(SpotLight * sLight, unsigned int lightCount, unsigned int textureUnit, unsigned int offset);
+	void SetTexture(GLuint textureUnit);
+	void SetDirectionalShadowMap(GLuint textureUnit);
+	void SetDirectionalLightTransform(glm::mat4* lTransform);
+
+	void SetOmniLightMatrices(std::vector<glm::mat4> lightMatrices);
+
+	void UseShader();
+	void ClearShader();
+
+	~Shader();
+
 private:
 	int pointLightCount;
 	int spotLightCount;
 
-	GLuint shaderID, uniformModel, uniformProjection, uniformView, uniformEyePosition,
-		uniformSpecularIntensity, uniformShininess, uniformDirectionalLightTransform, uniformDirectionalShadowMap,
-		uniformTexture, uniformOmniLightPos, uniformFarPlane;
+	GLuint shaderID, uniformProjection, uniformModel, uniformView, uniformEyePosition,
+		uniformSpecularIntensity, uniformShininess,
+		uniformTexture,
+		uniformDirectionalLightTransform, uniformDirectionalShadowMap,
+		uniformOmniLightPos, uniformFarPlane;
 
 	GLuint uniformLightMatrices[6];
 
-	struct
-	{
+	struct {
 		GLuint uniformColour;
 		GLuint uniformAmbientIntensity;
 		GLuint uniformDiffuseIntensity;
@@ -33,8 +77,8 @@ private:
 	} uniformDirectionalLight;
 
 	GLuint uniformPointLightCount;
-	struct
-	{
+
+	struct {
 		GLuint uniformColour;
 		GLuint uniformAmbientIntensity;
 		GLuint uniformDiffuseIntensity;
@@ -47,60 +91,29 @@ private:
 
 	GLuint uniformSpotLightCount;
 
-	struct
-	{
+	struct {
 		GLuint uniformColour;
 		GLuint uniformAmbientIntensity;
 		GLuint uniformDiffuseIntensity;
 
 		GLuint uniformPosition;
-		GLuint uniformDirection;
 		GLuint uniformConstant;
 		GLuint uniformLinear;
-
 		GLuint uniformExponent;
+
+		GLuint uniformDirection;
 		GLuint uniformEdge;
 	} uniformSpotLight[MAX_SPOT_LIGHTS];
 
-	void CompileShade(const char *vertexCode, const char *fragmentCode);
-	void CompileShade(const char *vertexCode, const char *geomtryCode, const char *fragmentCode);
-	void AddShader(GLuint theProgram, const char *shaderCode, GLenum shaderType);
+	struct {
+		GLuint uniformShadowMap;
+		GLuint uniformFarPlane;
+	} uniformOmniShadowMap[MAX_POINT_LIGHTS + MAX_SPOT_LIGHTS];
+
+	void CompileShader(const char* vertexCode, const char* fragmentCode);
+	void CompileShader(const char* vertexCode, const char* geometryCode, const char* fragmentCode);
+	void AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType);
 
 	void CompileProgram();
-
-public:
-	Shader();
-	void CreateFromString(const char *vertexCode, const char *fragmentCode);
-	void CreateFromFile(const char *vertexPath, const char *fragmentPath);
-	void CreateFromFile(const char *vertexLocation, const char *geometryLocation, const char *fragmentLocation);
-
-	std::string ReadFile(const char *fileLocation);
-
-	GLuint GetProjectionLocation();
-	GLuint GetModelLocation();
-	GLuint GetViewLocation();
-	GLuint GetAmbientIntensityLocation();
-	GLuint GetAmbientColourLocation();
-	GLuint GetDiffuseIntensityLocation();
-	GLuint GetDirectionLocation();
-	GLuint GetEyePositionLocation();
-	GLuint GetSpecularIntensityLocation();
-	GLuint GetShininessLocation();
-	GLuint GetFarPlaneLocation();
-	GLuint GetOmniLightPosLocation();
-
-	void SetDirectionalLight(DirectionalLight *dLight);
-	void SetPointLights(PointLight *pLights, unsigned int lightCount);
-	void SetSpotLights(SpotLight *sLights, unsigned int lightCount);
-	void SetTexture(GLuint textureUnit);
-	void SetDirectionalShadowMap(GLuint textureUnit);
-	void SetDirectionalLightTransform(glm::mat4 *lTransform);
-	void SetLightMatrices(std::vector<glm::mat4> lightMatrices);
-	void SetOmniLightMatrices(std::vector<glm::mat4> lightMatrices);
-
-	void UseShader();
-	void ClearShade();
-	void Validate();
-
-	~Shader();
 };
+

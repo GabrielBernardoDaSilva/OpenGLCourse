@@ -4,22 +4,28 @@
 #include <GL/glew.h>
 #include "stb_images.h"
 
+
 class Texture
 {
-private:
-    GLuint textureID;
-    int width, height, bitDepth;
-    const char* fileLocation;
 public:
-    Texture();
-    Texture(const char *fileLoc);
-    ~Texture();
+	Texture();
+	Texture(const char* fileLoc);
 
-    bool LoadTexture();
-    bool LoadTextureA();
-    void UseTexture();
-    void ClearTexture();
+	bool LoadTexture();
+	bool LoadTextureA();
+
+	void UseTexture();
+	void ClearTexture();
+
+	~Texture();
+
+private:
+	GLuint textureID;
+	int width, height, bitDepth;
+
+	const char* fileLocation;
 };
+
 
 
 

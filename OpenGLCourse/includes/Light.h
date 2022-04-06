@@ -9,28 +9,26 @@
 
 class Light
 {
-protected:
-    glm::vec3 colour;
-
-    GLfloat ambientIntensity;
-    GLfloat diffuseIntensity;
-
-    glm::mat4 lightProj;
-
-    ShadowMap* shadowMap;
-
 public:
-    Light();
-    Light(
-        GLfloat shadowWidth, GLfloat shadowHeight,
-        GLfloat red, GLfloat green, GLfloat blue, 
-        GLfloat aIntensity, GLfloat dIntensity);
-    ~Light();
+	Light();
+	Light(GLfloat shadowWidth, GLfloat shadowHeight,
+			GLfloat red, GLfloat green, GLfloat blue, 
+			GLfloat aIntensity, GLfloat dIntensity);
 
+	ShadowMap* GetShadowMap() { return shadowMap; }
 
-    ShadowMap* GetShadowMap() { return shadowMap; }
+	~Light();
 
-    
+protected:
+	glm::vec3 colour;
+	GLfloat ambientIntensity;
+	GLfloat diffuseIntensity;
+
+	glm::mat4 lightProj;
+
+	ShadowMap* shadowMap;
 };
+
+
 
 #endif // __LIGHT_H__
